@@ -24,7 +24,7 @@ const Weather: React.FC<WeatherProps> = ({ type, day, icon, temp, main }) => {
           alt="weather_icon"
         />
         <Typography variant="p" className="p-bold-big">
-          {temp}°
+          {Math.floor(temp)}°
           {type === 'today' && <Typography variant="span">{main}</Typography>}
         </Typography>
       </div>
