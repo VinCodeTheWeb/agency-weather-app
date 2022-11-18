@@ -51,7 +51,7 @@ const TemplateHome: React.FC<Home> = ({
           day="Today"
           type="today"
           icon={weatherData.weather[0].icon}
-          temp={weatherData.main.temp.toString()}
+          temp={weatherData.main.temp}
           main={weatherData.weather[0].main}
         />
 
@@ -61,7 +61,7 @@ const TemplateHome: React.FC<Home> = ({
             key={forecast.day}
             day={forecast.day}
             icon={forecast.weather.icon}
-            temp={forecast.main.temp.toString()}
+            temp={forecast.main.temp}
             main={forecast.weather.main}
           />
         ))}

@@ -5,7 +5,7 @@ interface WeatherProps {
   type: 'today' | 'forecast'
   day: string
   icon: string
-  temp: string
+  temp: number
   main: string
 }
 
